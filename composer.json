@@ -1,0 +1,20 @@
+{
+    "name": "sylvain/poo_avatar",
+    "require": {
+    },
+    "authors": [
+        {
+            "name": "Sylvain Blondeau",
+            "email": "sylvain.blondeau@wildcodeschool.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Heracles1\\": "src/heracles1",
+            "Heracles2\\": "src/heracles2",
+            "Heracles3\\": "src/heracles3",
+            "Heracles4\\": "src/heracles4"
+        }
+    }
+}

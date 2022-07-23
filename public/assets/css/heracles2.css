@@ -1,0 +1,65 @@
+body {
+    background-image: url('../images/backgroundHeracles2.webp');
+}
+
+/* Fight */
+.fighters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: var(--spacing-2);
+}
+
+.fighters figure {
+    --fighter-size: 200px;
+    width: var(--fighter-size);
+    height: var(--fighter-size);
+    border: 4px solid var(--ternary-color);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.fighters .fight {
+    font-size: 64px;
+}
+
+.fighters figcaption {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    font-size: var(--subtitle-font-size);
+    text-align: center;
+}
+
+.fighters img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.3s;
+}
+
+.fighters img:hover {
+    scale: 1.1;
+}
+
+.life {
+    display: flex;
+}
+
+.life div, .life progress {
+    margin: var(--spacing);
+}
+
+/* Inventory */
+.inventory {
+    grid-template-columns: repeat(2, var(--slot-size));
+    grid-template-rows: repeat(5, var(--slot-size));
+}
+
+.inventory .slot {
+    grid-column: span 1;
+    grid-row: span 1;
+}
