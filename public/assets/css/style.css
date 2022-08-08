@@ -39,6 +39,12 @@ body {
     font-size: var(--text-font-size);
 }
 
+hr {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .darker {
     filter: brightness(90%);
 }
